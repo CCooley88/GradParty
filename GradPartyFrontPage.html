@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang='en' ng-app="bookStore">
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Graduation Party</title>
+    <link rel="stylesheet" href="GradParty.css">
+    <script type="text/javascript" src="GradParty.js"></script>
+</head>
+
+<body id="body">
+
+    <!-- <div class="rcorners parent"> -->
+    <div class="parent"> 
+        <canvas id="Matrix" class="absolute"></canvas>
+        <script src="./matrix.js"></script>
+        <div id="cardContainer" class="rcorners parent scene_element--fadein">
+            <h1 class="child title">
+                Graduation Party
+            </h1>
+            <div class="child text-font">
+                What:
+                <br>
+                Chris Kulig's amazing graduation party.
+                <br>
+                <br>
+                After years of suffering your friend is finally done. Come join for an awesome celebration.
+            </div>
+            <div class="child text-font">
+                <br>
+                Where:
+                <br>
+                <a href="https://turtleswampbrewing.com/">Turtle Swamp Brewery</a>
+                <br>
+                3377 Washington St, Boston, MA 02130
+                <br>
+                <br>
+                When:
+                <br>
+                5/21/2022
+                7:00pm - 11:00pm
+            </div>
+            <div class="child text-font">
+                <br>
+                Who's Coming?
+                <br>
+                <ul id="guestList"></ul>
+                <br>
+                <button id="addGuest">+ Add Guest</button>
+                <br>
+                <button id="saveGuestsButton">Save Guest List</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
