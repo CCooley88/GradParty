@@ -67,9 +67,6 @@ function addGuestToDatabase(guestArray) {
 }
 
 function transition() {
-    // document.getElementById("cardContainer").childNodes.forEach(e => {
-    //     console.log(`node name: ${e.childNodes.length}`);
-    // });
     let matrixCanvas = document.getElementById("Matrix");
     matrixCanvas.parentNode.removeChild(canvas) 
 }

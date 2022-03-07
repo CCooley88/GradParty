@@ -89,9 +89,7 @@ a {
   animation-duration: 4s;
   transition-timing-function: ease-in;
   animation-fill-mode: both;
-
 } 
-
 
 .scene_element--fadein {
   /* animation-delay: 10s; */
