@@ -10,22 +10,25 @@
 </head>
 
 <body id="body">
-    <div class="parent"> 
-        <canvas id="Matrix" class="absolute"></canvas>
-        <script src="./matrix.js"></script>
-        <div id="cardContainer" class="rcorners parent scene_element--fadein">
-            <h1 class="child title">
+    <canvas id="Matrix" class="absolute"></canvas>
+    <script src="./matrix.js"></script>
+    <div class="parent mainPage"> 
+        <div id="entryDiv" class="entry absolute">
+            <input id="entryInput" placeholder="~~ Enter Passcode ~~"></input>
+            <button id="enterPassword" class="greenTextButton" onclick="checkPassword()">Enter</button>
+        </div>
+        <div id="cardContainer" class="rcorners parent visible">
+            <h1 id="cardTitle" class="child title">
                 Graduation Party
             </h1>
-            <div class="child text-font">
+            <div id="cardText" class="child text-font">
                 What:
                 <br>
                 Chris Kulig's amazing graduation party.
                 <br>
                 <br>
                 After years of suffering your friend is finally done. Come join for an awesome celebration.
-            </div>
-            <div class="child text-font">
+                <br>
                 <br>
                 Where:
                 <br>
@@ -38,8 +41,7 @@
                 <br>
                 5/21/2022
                 7:00pm - 11:00pm
-            </div>
-            <div class="child text-font">
+                <br>
                 <br>
                 Who's Coming?
                 <br>
@@ -47,7 +49,10 @@
                 <br>
                 <button id="addGuest">+ Add Guest</button>
                 <br>
-                <button id="saveGuestsButton">Save Guest List</button>
+                <button id="saveGuestsButton" onclick="saveGuestList()">Save Guest List</button>
+                <br>
+                <br>
+                Catering from a local JP establishment provided. Turtleswamp permits children and dogs on site!
             </div>
         </div>
     </div>
